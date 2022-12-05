@@ -18,11 +18,6 @@
 }
 
 html {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   scroll-behavior: smooth;
 
   font-family: '', Sans-serif;
@@ -30,7 +25,10 @@ html {
 }
 
 body {
-  width: 1440px;
+  display: grid;
+  grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
+
+  width: 100vw;
 
   font-size: 1.6rem;
 }
@@ -39,22 +37,21 @@ body {
 /* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
 
 header {
-  width: 100%;
-  height: 765px;
+  grid-area: 1 / 2 / 1 / 4;
 }
 
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
 
 main {
-  width: 100%;
-  height: 3555px;
+  grid-area: 2 / 2 / 6 / 4;
+  display: grid;
+  grid-template: repeat(4, 1fr);
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
 footer {
-  width: 100%;
-  height: 395px;
+  grid-area: 6 / 2 / 7 / 4;
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
