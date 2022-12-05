@@ -1,0 +1,45 @@
+/** @format */
+
+:root {
+  --colour-white: #ffffff;
+  --colour-black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  font-family: '', Sans-serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* =====^^^^^^^^^^===== BASE-CSS END =====^^^^^^^^^^===== */
+/* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
+
+header {
+}
+
+/* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
+
+main {
+}
+
+/* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
+
+footer {
+}
+
+/* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
+
+@media screen and (max-width: px) {
+}

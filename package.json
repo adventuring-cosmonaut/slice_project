@@ -1,0 +1,25 @@
+{
+  "name": "slice_project",
+  "version": "1.0.0",
+  "description": "<!-- @format -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adventuring-cosmonaut/slice_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adventuring-cosmonaut/slice_project/issues"
+  },
+  "homepage": "https://github.com/adventuring-cosmonaut/slice_project#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.29.0"
+  }
+}

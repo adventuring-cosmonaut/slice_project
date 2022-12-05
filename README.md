@@ -1,7 +1,5 @@
 <!-- @format -->
 
-# slice_project
+# Slice
 
-slice knife company site
-
-uhiih
+This bitch empty
