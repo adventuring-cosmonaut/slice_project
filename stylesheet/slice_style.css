@@ -18,6 +18,11 @@
 }
 
 html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   scroll-behavior: smooth;
 
   font-family: '', Sans-serif;
@@ -25,11 +30,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   width: 1440px;
 
   font-size: 1.6rem;
@@ -53,8 +53,8 @@ main {
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
 footer {
-    width: 100%;
-    height: 395px;
+  width: 100%;
+  height: 395px;
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
