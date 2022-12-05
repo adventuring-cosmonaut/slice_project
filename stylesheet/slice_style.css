@@ -1,5 +1,26 @@
 /** @format */
 
+/* ¿?¿?¿?¿?¿? READ ME ¿?¿?¿?¿?¿? 
+
+
+I've made some smaller dividers for each section below to make our code
+a bit cleaner and not have it overlay.
+
+
+I've already made spacing between each section, so you shouldn't
+need to add top and bottom margin to the sections themselves.
+
+If you wanna tweak it, feel free, just try not to mess with the
+overall grid system too much, wouldn't want it to break (This is mainly meant
+for the 'main' section tho, the 'header' is sectioned by itself, so you should 
+be able fuck around just fine up there actually).
+
+Just remove this whole comment when you've both seen it.
+
+Happy coding!
+
+¿?¿?¿?¿?¿? READ ME ¿?¿?¿?¿?¿? */
+
 :root {
   --colour-white: #ffffff;
   --colour-light-grey: #f1f1f1;
@@ -28,8 +49,6 @@ body {
   display: grid;
   grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
 
-  width: 100vw;
-
   font-size: 1.6rem;
 }
 
@@ -37,21 +56,60 @@ body {
 /* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
 
 header {
-  grid-area: 1 / 2 / 1 / 4;
+  grid-area: 1 / 1 / 2 / 5;
+  display: grid;
+  grid-template: 130px 12% 1fr 12% / 1fr repeat(2, 2fr) 1fr;
+}
+
+/* ----- Navigation Bar : Matias ----- */
+/* The nav bar height is including the red slice, feel free to tweak tho */
+.nav_bar {
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+/* ----- Landing Page : Matias ----- */
+.landing_page {
+  grid-area: 3 / 2 / 4 / 4;
 }
 
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
 
 main {
-  grid-area: 2 / 2 / 6 / 4;
+  grid-area: 2 / 1 / 6 / 5;
   display: grid;
-  grid-template: repeat(4, 1fr);
+  grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
+}
+
+/* ----- Product Intro Section : Mads ----- */
+.product_intro_section {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+/* ----- Product Overview Section : Chris ----- */
+.product_overview_section {
+  grid-area: 4 / 2 / 5 / 4;
+}
+
+/* ----- Product Slideshow Section : Chris ----- */
+.product_slideshow_section {
+  grid-area: 6 / 2 / 7 / 4;
+}
+
+/* ----- Information banner : Mads ----- */
+.info_banner_section {
+  grid-area: 8 / 1 / 9 / 5;
+}
+
+/* ----- Contact & Signup Section : Mads ----- */
+.product_contact_signup_section {
+  grid-area: 10 / 2 / 11 / 4;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
+/* ----- Footer : Matias ----- */
 footer {
-  grid-area: 6 / 2 / 7 / 4;
+  grid-area: 6 / 1 / 7 / 5;
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
