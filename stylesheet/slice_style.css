@@ -26,94 +26,112 @@ Happy coding!
 ¿?¿?¿?¿?¿? READ ME ¿?¿?¿?¿?¿? */
 
 :root {
-  --colour-white: #ffffff;
-  --colour-light-grey: #f1f1f1;
-  --colour-light-red: #ef233c;
-  --colour-dark-red: #d80032;
-  --colour-black: #0f1016;
+	--colour-white: #ffffff;
+	--colour-light-grey: #f1f1f1;
+	--colour-light-red: #ef233c;
+	--colour-dark-red: #d80032;
+	--colour-black: #0f1016;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  border: 1px solid;
+	border: 1px solid;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 
-  font-family: '', Sans-serif;
-  font-size: 10px;
+	font-family: "", Sans-serif;
+	font-size: 10px;
 }
 
 body {
-  display: grid;
-  grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
+	display: grid;
+	grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
 
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 /* =====^^^^^^^^^^===== BASE-CSS END =====^^^^^^^^^^===== */
 /* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
 
 header {
-  grid-area: 1 / 1 / 2 / 5;
-  display: grid;
-  grid-template: 130px 12% 1fr 12% / 1fr repeat(2, 2fr) 1fr;
+	grid-area: 1 / 1 / 2 / 5;
+	display: grid;
+	grid-template: 130px 12% 1fr 12% / 1fr repeat(2, 2fr) 1fr;
 }
 
 /* ----- Navigation Bar : Matias ----- */
 /* The nav bar height is including the red slice, feel free to tweak tho */
 .nav_bar {
-  grid-area: 1 / 1 / 2 / 5;
+	grid-area: 1 / 1 / 2 / 5;
 }
 
 /* ----- Landing Page : Matias ----- */
 .landing_page {
-  grid-area: 3 / 2 / 4 / 4;
+	grid-area: 3 / 2 / 4 / 4;
 }
 
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
 
 main {
-  grid-area: 2 / 1 / 6 / 5;
-  display: grid;
-  grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
+	grid-area: 2 / 1 / 6 / 5;
+	display: grid;
+	grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
-  grid-area: 2 / 2 / 3 / 4;
+	grid-area: 2 / 2 / 3 / 4;
 }
 
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
-  grid-area: 4 / 2 / 5 / 4;
+	grid-area: 4 / 2 / 5 / 4;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
-  grid-area: 6 / 2 / 7 / 4;
+	grid-area: 6 / 2 / 7 / 4;
 }
 
 /* ----- Information banner : Mads ----- */
 .info_banner_section {
-  grid-area: 8 / 1 / 9 / 5;
+	grid-area: 8 / 1 / 9 / 5;
+	background-color: var(--colour-black);
+}
+.info_banner_section_inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	min-height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.info_banner_section * {
+	border: none;
+}
+.info_banner_section_inner p {
+	color: white;
+}
+.info_banner_section_inner img {
+	max-height: 64px;
 }
 
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
-  grid-area: 10 / 2 / 11 / 4;
+	grid-area: 10 / 2 / 11 / 4;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
 /* ----- Footer : Matias ----- */
 footer {
-  grid-area: 6 / 1 / 7 / 5;
+	grid-area: 6 / 1 / 7 / 5;
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
