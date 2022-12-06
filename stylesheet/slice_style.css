@@ -1,30 +1,5 @@
 /** @format */
 
-/* ¿?¿?¿?¿?¿? READ ME ¿?¿?¿?¿?¿? 
-
-
-I've made some smaller dividers for each section below to make our code
-a bit cleaner and not have it overlay.
-
-
-The 'media' folder in the repo is for all the images and such. Feel free
-to make sub folders if you wanna organize or smth, or don't idrc lol
-
-
-I've already made spacing between each section, so you shouldn't
-need to add top and bottom margin to the sections themselves.
-
-If you wanna tweak it, feel free, just try not to mess with the
-overall grid system too much, wouldn't want it to break (This is mainly meant
-for the 'main' section tho, the 'header' is sectioned by itself, so you should 
-be able fuck around just fine up there actually).
-
-Just remove this whole comment when you've both seen it.
-
-Happy coding!
-
-¿?¿?¿?¿?¿? READ ME ¿?¿?¿?¿?¿? */
-
 :root {
   --colour-white: #ffffff;
   --colour-light-grey: #f1f1f1;
@@ -124,6 +99,51 @@ main {
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
   grid-area: 4 / 2 / 5 / 4;
+  display: flex;
+
+  border: none;
+}
+
+.knife_overview_image_placeholder {
+  width: 50%;
+  height: 100%;
+
+  background: center / contain no-repeat url('../media/knife_overview_placeholder.png');
+
+  border: none;
+}
+
+.overview_text_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: right;
+  align-items: center;
+
+  width: 50%;
+  height: 100%;
+
+  border: none;
+}
+
+.overview_text_section h2,
+.overview_text_section p,
+.overview_text_section div {
+  border: none;
+}
+
+.overview_text_section h2 {
+  font-size: 3em;
+
+  color: var(--colour-light-red);
+}
+
+.overview_text_section p {
+  margin-top: 3%;
+
+  line-height: 20px;
+  text-align: justify;
+  font-size: 1.1em;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
