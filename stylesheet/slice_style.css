@@ -3,122 +3,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --colour-white: #ffffff;
-  --colour-light-grey: #f1f1f1;
-  --colour-light-red: #ef233c;
-  --colour-dark-red: #d80032;
-  --colour-black: #0f1016;
+	--colour-white: #ffffff;
+	--colour-light-grey: #f1f1f1;
+	--colour-light-red: #ef233c;
+	--colour-dark-red: #d80032;
+	--colour-black: #0f1016;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 
   margin: 0;
   padding: 0;
-
-  border: 1px solid;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 
   font-family: 'Poppins', Sans-serif;
   font-size: 10px;
 }
 
 body {
-  display: grid;
-  grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
+	display: grid;
+	grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
 
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 /* =====^^^^^^^^^^===== BASE-CSS END =====^^^^^^^^^^===== */
 /* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
 
-header {
-  grid-area: 1 / 1 / 2 / 5;
-  display: grid;
-  grid-template: 130px 12% 1fr 12% / 1fr repeat(2, 2fr) 1fr;
-}
+/* header {
+
+} */
 
 /* ----- Navigation Bar : Matias ----- */
 /* The nav bar height is including the red slice, feel free to tweak tho */
+nav {
+  width: 100vw;
+  position: fixed;
+}
+
 .nav_bar {
-  grid-area: 1 / 1 / 2 / 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 18px 0;
+
+	background-color: var(--colour-black);
+}
+
+.menu_links {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.menu_links a {
+  font-size: 1.7rem;
+  color: white;
+
+	text-decoration: none;
+}
+
+.menu_social {
+}
+
+.triangle-top {
+  position: fixed;
+  top: 100px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3vh 100vw 0 0;
+  border-color: var(--colour-dark-red) transparent transparent transparent;
 }
 
 /* ----- Landing Page : Matias ----- */
 .landing_page {
-  grid-area: 3 / 2 / 4 / 4;
+  background-image: url("/media/pexels-toni-cuenca-594060.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
 
 main {
-  grid-area: 2 / 1 / 6 / 5;
-  display: grid;
-  grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
+	display: grid;
+	grid-area: 2 / 1 / 6 / 5;
+	grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
-  grid-area: 2 / 2 / 3 / 4;
+	grid-area: 2 / 2 / 3 / 4;
 }
 
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
-  grid-area: 4 / 2 / 5 / 4;
-  display: flex;
+	grid-area: 4 / 2 / 5 / 4;
+	display: flex;
 
-  border: none;
+	border: none;
 }
 
 .knife_overview_image_placeholder {
-  width: 50%;
-  height: 100%;
+	width: 50%;
+	height: 100%;
 
-  background: center / contain no-repeat url('../media/knife_overview_placeholder.png');
+  background: center / contain no-repeat
+    url("../media/knife_overview_placeholder.png");
 
-  border: none;
+	border: none;
 }
 
 .overview_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-self: right;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-self: right;
+	align-items: center;
 
-  width: 50%;
-  height: 100%;
+	width: 50%;
+	height: 100%;
 
-  border: none;
+	border: none;
 }
 
 .overview_text_section h2,
 .overview_text_section p,
 .overview_text_section div {
-  border: none;
+	border: none;
 }
 
 .overview_text_section h2 {
-  font-size: 3em;
+	font-size: 3em;
 
-  color: var(--colour-light-red);
+	color: var(--colour-light-red);
 }
 
 .overview_text_section p {
-  margin-top: 3%;
+	margin-top: 3%;
 
-  line-height: 20px;
-  text-align: justify;
-  font-size: 1.1em;
+	line-height: 20px;
+	text-align: justify;
+	font-size: 1.1em;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
-  grid-area: 6 / 2 / 7 / 4;
+	grid-area: 6 / 2 / 7 / 4;
 
   display: grid;
   grid-template: 1fr 35px / 1fr 16fr 1fr;
@@ -187,19 +227,39 @@ main {
 
 /* ----- Information banner : Mads ----- */
 .info_banner_section {
-  grid-area: 8 / 1 / 9 / 5;
+	grid-area: 8 / 1 / 9 / 5;
+	background-color: var(--colour-black);
+}
+.info_banner_section_inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	min-height: 100%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+.info_banner_section * {
+	border: none;
+}
+.info_banner_section_inner p {
+	color: white;
+}
+.info_banner_section_inner img {
+	max-height: 64px;
 }
 
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
-  grid-area: 10 / 2 / 11 / 4;
+	grid-area: 10 / 2 / 11 / 4;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
 /* ----- Footer : Matias ----- */
 footer {
-  grid-area: 6 / 1 / 7 / 5;
+	grid-area: 6 / 1 / 7 / 5;
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
