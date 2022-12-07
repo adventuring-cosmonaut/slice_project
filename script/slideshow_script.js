@@ -25,7 +25,7 @@ function update_img(imageNum) {
   let slideItem = slideImgArr[imageNum];
 
   imgContainer.src = slideItem.imagePath;
-  if ((dotSelector.classlist = 'slideshow_dot_active')) {
+  if ((dotSelector.classlist === '.slideshow_dot_active')) {
     dotSelector.classlist.remove('slideshow_dot_active');
   }
   slideItem.imageDot.classList.add('slideshow_dot_active');
