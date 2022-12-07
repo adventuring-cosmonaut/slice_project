@@ -85,19 +85,11 @@ nav {
 
 /* ----- Landing Page : Matias ----- */
 .landing_page {
-<<<<<<< HEAD
   background-image: url('/media/pexels-toni-cuenca-594060.jpg');
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
-=======
-	background-image: url("/media/pexels-toni-cuenca-594060.jpg");
-	background-size: cover;
-	background-position: center;
-	width: 100vw;
-	height: 100vh;
->>>>>>> 138f8f8b040cb9f0481b184b66a0030dd5558044
 }
 
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
@@ -162,12 +154,7 @@ main {
   width: 50%;
   height: 100%;
 
-<<<<<<< HEAD
   background: center / contain no-repeat url('../media/knife_overview_placeholder.png');
-=======
-	background: center / contain no-repeat
-		url("../media/knife_overview_placeholder.png");
->>>>>>> 138f8f8b040cb9f0481b184b66a0030dd5558044
 
   border: none;
 }
