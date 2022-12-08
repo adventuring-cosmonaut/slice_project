@@ -14,7 +14,6 @@
 
 * {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
@@ -294,6 +293,8 @@ main {
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
   grid-area: 10 / 2 / 11 / 4;
+  border: none;
+  border-radius: 0px;
 }
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
@@ -302,27 +303,45 @@ input {
   width: 100%;
   padding: 25px 1rem;
   border: 2px solid #000;
+  border-radius: 0;
 
   font-family: 'Poppins';
   font-size: 18px;
 }
+input:active {
+  border: 2px solid #000;
+  border-radius: 0;
+}
 input:invalid {
   border-color: var(--colour-dark-red);
 }
-input:valid {
-  border-color: black;
-}
 input:active {
-  border-radius: none;
+  border: 0;
+  border-radius: 0px;
+}
+input:focus-visible {
+  border: none;
+  border-radius: 0px;
 }
 button {
   padding: 0 15px;
+  border: none;
   background-color: var(--colour-black);
+  border-radius: 0;
 
   font-size: 5rem;
+  text-decoration: none;
   color: var(--colour-white);
 
+  transition: background 250ms ease;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
+}
+button:focus,
+button:hover {
+  background-color: var(--colour-deep-black);
 }
 .newsletter {
   display: flex;
