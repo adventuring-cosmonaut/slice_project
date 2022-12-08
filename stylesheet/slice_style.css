@@ -35,9 +35,9 @@ body {
 /* =====^^^^^^^^^^===== BASE-CSS END =====^^^^^^^^^^===== */
 /* =====vvvvvvvvvv===== HEADER =====vvvvvvvvvv=====*/
 
-/* header {
-
-} */
+header {
+  grid-area: 1 / 1 / 2 / 5;
+}
 
 /* fix */
 
@@ -92,7 +92,7 @@ nav {
   display: flex;
   align-items: center;
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   background-image: url('/media/slicebg.jpg');
