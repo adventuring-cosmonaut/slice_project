@@ -39,10 +39,7 @@ header {
   grid-area: 1 / 1 / 2 / 5;
 }
 
-/* fix */
-
 /* ----- Navigation Bar : Matias ----- */
-/* The nav bar height is including the red slice, feel free to tweak tho */
 nav {
   position: fixed;
 }
@@ -95,7 +92,7 @@ nav {
   width: 100%;
   height: 100vh;
 
-  background-image: url('/media/slicebg.jpg');
+  background-image: url('../media/slicebg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -109,8 +106,6 @@ nav {
 
 .landing_left_box {
   max-width: 600px;
-
-  /* background-color: #ffffff; */
 }
 
 .landing_left_box h1 {
