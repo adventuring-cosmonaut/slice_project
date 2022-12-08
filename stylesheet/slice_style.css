@@ -8,12 +8,12 @@
   --colour-light-grey: #f1f1f1;
   --colour-light-red: #ef233c;
   --colour-dark-red: #d80032;
-  --colour-black: #0b0b0b;
+  --colour-black: #0f1016;
+  --colour-deep-black: #0b0b0b;
 }
 
 * {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
@@ -39,39 +39,36 @@ header {
   grid-area: 1 / 1 / 2 / 5;
 }
 
-/* fix */
-
 /* ----- Navigation Bar : Matias ----- */
-/* The nav bar height is including the red slice, feel free to tweak tho */
 nav {
+  width: 100vw;
   position: fixed;
+
+  z-index: 1;
 }
 
 .nav_bar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  width: 100%;
-  padding: 16px 10vw;
-  background-color: var(--colour-black);
+  padding: 16px 0;
+
+  background-color: var(--colour-deep-black);
 }
 
 .menu_links {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 40px;
 }
 
 .menu_links a {
   font-size: 1.7rem;
-  text-decoration: none;
-  color: var(--colour-white);
-}
+  color: white;
 
-.menu_social {
-  width: 100px;
+  text-decoration: none;
 }
 
 .triangle-top {
@@ -84,66 +81,19 @@ nav {
   height: 0;
   border-color: var(--colour-dark-red) transparent transparent transparent;
   border-style: solid;
-  border-width: 1vh 100vw 0 0;
+  border-width: 0.8vh 100vw 0 0;
 }
 
 /* ----- Landing Page : Matias ----- */
 .landing_page {
-  display: flex;
-  align-items: center;
-
   width: 100%;
   height: 100vh;
-
-  background-image: url('/media/slicebg.jpg');
-  background-size: cover;
+  background-image: url('../media/slicebg.jpg');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.landing_text_container {
-  display: grid;
-  grid-template: minmax(550px, 500px) / 100%;
-
-  margin: 180px 10vw 0;
-}
-
-.landing_left_box {
-  max-width: 600px;
-
-  /* background-color: #ffffff; */
-}
-
-.landing_left_box h1 {
-  margin-bottom: 40px;
-
-  font-size: 6rem;
-  line-height: 8rem;
-
-  color: var(--colour-white);
-}
-
-.landing_left_box span {
-  line-height: 3rem;
-
-  color: var(--colour-white);
-}
-
-.landing_button {
-  margin-top: 70px;
-}
-
-.landing_button a {
-  padding: 12px 25px;
-
-  color: var(--colour-white);
-  background-color: var(--colour-dark-red);
-
-  text-decoration: none;
-}
-
-.landing_button a:hover {
-  background-color: var(--colour-light-red);
-}
 /* =====vvvvvvvvvv===== MAIN =====vvvvvvvvvv=====*/
 
 main {
@@ -155,8 +105,6 @@ main {
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
   grid-area: 2 / 2 / 3 / 4;
-
-  margin-top: 50px;
 }
 .product_intro_section_inner {
   display: grid;
@@ -166,15 +114,13 @@ main {
     'big-img-template small-img-template-1'
     'big-img-template small-img-template-2';
 
-  gap: 1em;
+  gap: 2em;
 }
 .product_intro_section_inner > h2 {
   grid-area: header;
 }
 .product_intro_section_inner > p {
   grid-area: header;
-
-  margin-bottom: 1em;
 }
 .product_intro_section_inner > .big-img-template {
   grid-area: big-img-template;
@@ -253,69 +199,86 @@ main {
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
   grid-area: 6 / 2 / 7 / 4;
-
-  display: grid;
-  grid-template: 1fr 35px / 1fr 16fr 1fr;
 }
 
-.slideshow_button {
-  transform: scale(2);
+.slideshow_container {
+  position: relative;
+
+  max-width: 90%;
+  height: 90%;
+  margin-left: 5%;
+}
+
+.slideshow_slide {
+  display: none;
+
+  height: 100%;
+}
+
+.slide_1 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_1.jpg');
+}
+
+.slide_2 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_2.jpg');
+}
+
+.slide_3 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_3.jpg');
+}
+
+.slideshow_prev,
+.slideshow_next {
+  position: absolute;
+  top: 50%;
+
+  margin-top: -22px;
+  padding: 16px;
+  border-radius: 0 3px 0 3px;
+
+  font-size: 3.8rem;
+  font-weight: bold;
 
   cursor: pointer;
-
-  border: none;
+  user-select: none;
 }
 
-.slideshow_prev_button {
-  grid-area: 1 / 1 / 3 / 2;
+.slideshow_prev {
+  left: -6%;
+}
 
-  display: flex;
+.slideshow_next {
+  right: -6%;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots_container {
   align-items: center;
-  justify-content: center;
-
-  border: none;
-}
-
-.slideshow_image_container {
-  grid-area: 1 / 2 / 3 / 3;
-
-  border: none;
-}
-
-.slideshow_next_button {
-  grid-area: 1 / 3 / 3 / 4;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  border: none;
+  margin-top: 35px;
+  justify-content: center;
 }
 
-.slideshow_highlight_dots_container {
-  grid-area: 2 / 2 / 3 / 3;
+.slideshow_dot {
+  display: inline-block;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-}
-
-.slideshow_highlight_dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 0.5%;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
   border-radius: 50%;
-  border: none;
-
   background-color: #bbb;
 
+  text-align: center;
+
   cursor: pointer;
 }
 
-.slideshow_dot_active,
-.slideshow_highlight_dot:hover {
+.active,
+.slideshow_dot:hover {
   background-color: #717171;
 }
 
@@ -347,36 +310,60 @@ main {
 
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
+  border: none;
   grid-area: 10 / 2 / 11 / 4;
+  border-radius: 0px;
 }
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
+}
+.product_contact_signup_section > h3 {
+  margin-bottom: 1rem;
+}
+.product_contact_signup_section > p {
+  margin-bottom: 8rem;
 }
 input {
   width: 100%;
   padding: 25px 1rem;
   border: 2px solid #000;
+  border-radius: 0;
 
   font-family: 'Poppins';
   font-size: 18px;
 }
+input:active {
+  border: 2px solid #000;
+  border-radius: 0;
+}
 input:invalid {
   border-color: var(--colour-dark-red);
 }
-input:valid {
-  border-color: black;
-}
 input:active {
-  border-radius: none;
+  border: 0;
+  border-radius: 0px;
+}
+input:focus-visible {
+  border: none;
+  border-radius: 0px;
 }
 button {
   padding: 0 15px;
+  border: none;
+  border-radius: 0;
   background-color: var(--colour-black);
 
   font-size: 5rem;
+  text-decoration: none;
   color: var(--colour-white);
 
+  transition: background 250ms ease;
+
   cursor: pointer;
+}
+button:focus,
+button:hover {
+  background-color: var(--colour-deep-black);
 }
 .newsletter {
   display: flex;
@@ -387,7 +374,6 @@ button {
 /* ----- Footer : Matias ----- */
 footer {
   grid-area: 6 / 1 / 7 / 5;
-
   background-color: var(--colour-black);
 }
 
