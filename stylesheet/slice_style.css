@@ -40,10 +40,11 @@ body {
 } */
 
 /* ----- Navigation Bar : Matias ----- */
-/* The nav bar height is including the red slice, feel free to tweak tho */
 nav {
   width: 100vw;
   position: fixed;
+
+  z-index: 1;
 }
 
 .nav_bar {
@@ -198,69 +199,76 @@ main {
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
   grid-area: 6 / 2 / 7 / 4;
-
-  display: grid;
-  grid-template: 1fr 35px / 1fr 16fr 1fr;
 }
 
-.slideshow_button {
-  transform: scale(2);
+.slideshow_container {
+  max-width: 100%;
+  position: relative;
+}
 
+.slideshow_slide {
+  display: none;
+  height: 60vw;
+}
+
+.slide_1 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_1.jpg');
+}
+
+.slide_2 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_2.jpg');
+}
+
+.slide_3 {
+  background: center / cover no-repeat
+    url('../media/temp_numbers_slideshow/product_3.jpg');
+}
+
+.slideshow_prev,
+.slideshow_next {
   cursor: pointer;
-
-  border: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-radius: 0 3px 0 3px;
+  user-select: none;
 }
 
-.slideshow_prev_button {
-  grid-area: 1 / 1 / 3 / 2;
+.slideshow_prev {
+  left: -6%;
+}
 
+.slideshow_next {
+  right: -6%;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots_container {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: none;
+  margin-top: 15px;
 }
 
-.slideshow_image_container {
-  grid-area: 1 / 2 / 3 / 3;
-
-  border: none;
-}
-
-.slideshow_next_button {
-  grid-area: 1 / 3 / 3 / 4;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-}
-
-.slideshow_highlight_dots_container {
-  grid-area: 2 / 2 / 3 / 3;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-}
-
-.slideshow_highlight_dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 0.5%;
-  border-radius: 50%;
-  border: none;
-
+.slideshow_dot {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
   background-color: #bbb;
-
-  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
 }
 
-.slideshow_dot_active,
-.slideshow_highlight_dot:hover {
+.active,
+.slideshow_dot:hover {
   background-color: #717171;
 }
 
