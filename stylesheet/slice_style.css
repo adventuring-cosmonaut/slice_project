@@ -8,12 +8,12 @@
   --colour-light-grey: #f1f1f1;
   --colour-light-red: #ef233c;
   --colour-dark-red: #d80032;
-  --colour-black: #0f1016;
-  --colour-deep-black: #0b0b0b;
+  --colour-black: #0b0b0b;
 }
 
 * {
   box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 }
@@ -40,53 +40,59 @@ body {
 } */
 
 /* ----- Navigation Bar : Matias ----- */
+/* The nav bar height is including the red slice, feel free to tweak tho */
 nav {
-  width: 100vw;
   position: fixed;
-
-  z-index: 1;
 }
 
 .nav_bar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  padding: 16px 0;
-
-  background-color: var(--colour-deep-black);
+  width: 100%;
+  padding: 16px 10vw;
+  background-color: var(--colour-black);
 }
 
 .menu_links {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 50px;
 }
 
 .menu_links a {
   font-size: 1.7rem;
-  color: white;
-
   text-decoration: none;
+  color: var(--colour-white);
 }
 
 .menu_social {
+  width: 100px;
 }
 
 .triangle-top {
+  display: inline-block;
+
   position: fixed;
   top: 100px;
-  display: inline-block;
+
   width: 0;
   height: 0;
-  border-style: solid;
-  border-width: 0.8vh 100vw 0 0;
   border-color: var(--colour-dark-red) transparent transparent transparent;
+  border-style: solid;
+  border-width: 1vh 100vw 0 0;
 }
 
 /* ----- Landing Page : Matias ----- */
 .landing_page {
+  display: flex;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
   background-image: url('/media/slicebg.jpg');
   background-size: cover;
   background-position: center;
@@ -105,6 +111,8 @@ main {
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
   grid-area: 2 / 2 / 3 / 4;
+
+  margin-top: 50px;
 }
 .product_intro_section_inner {
   display: grid;
@@ -114,13 +122,15 @@ main {
     'big-img-template small-img-template-1'
     'big-img-template small-img-template-2';
 
-  gap: 2em;
+  gap: 1em;
 }
 .product_intro_section_inner > h2 {
   grid-area: header;
 }
 .product_intro_section_inner > p {
   grid-area: header;
+
+  margin-bottom: 1em;
 }
 .product_intro_section_inner > .big-img-template {
   grid-area: big-img-template;
@@ -199,11 +209,17 @@ main {
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
   grid-area: 6 / 2 / 7 / 4;
+
+  display: grid;
+  grid-template: 1fr 35px / 1fr 16fr 1fr;
 }
 
-.slideshow_container {
-  max-width: 100%;
-  position: relative;
+.slideshow_button {
+  transform: scale(2);
+
+  cursor: pointer;
+
+  border: none;
 }
 
 .slideshow_slide {
@@ -239,36 +255,33 @@ main {
   user-select: none;
 }
 
-.slideshow_prev {
-  left: -6%;
+  border: none;
 }
 
-.slideshow_next {
-  right: -6%;
-  border-radius: 3px 0 0 3px;
-}
+.slideshow_highlight_dots_container {
+  grid-area: 2 / 2 / 3 / 3;
 
-.dots_container {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin-top: 15px;
+  border: none;
 }
 
-.slideshow_dot {
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
+.slideshow_highlight_dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 0.5%;
   border-radius: 50%;
-  display: inline-block;
-  text-align: center;
+  border: none;
+
+  background-color: #bbb;
+
+  cursor: pointer;
 }
 
-.active,
-.slideshow_dot:hover {
+.slideshow_dot_active,
+.slideshow_highlight_dot:hover {
   background-color: #717171;
 }
 
@@ -301,41 +314,26 @@ main {
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
   grid-area: 10 / 2 / 11 / 4;
-  border: none;
-  border-radius: 0px;
 }
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
-}
-.product_contact_signup_section > h3 {
-  margin-bottom: 1rem;
-}
-.product_contact_signup_section > p {
-  margin-bottom: 8rem;
 }
 input {
   width: 100%;
   padding: 25px 1rem;
   border: 2px solid #000;
-  border-radius: 0;
 
   font-family: 'Poppins';
   font-size: 18px;
 }
-input:active {
-  border: 2px solid #000;
-  border-radius: 0;
-}
 input:invalid {
   border-color: var(--colour-dark-red);
 }
-input:active {
-  border: 0;
-  border-radius: 0px;
+input:valid {
+  border-color: black;
 }
-input:focus-visible {
-  border: none;
-  border-radius: 0px;
+input:active {
+  border-radius: none;
 }
 button {
   padding: 0 15px;
@@ -347,15 +345,7 @@ button {
   background-color: var(--colour-black);
   color: var(--colour-white);
 
-  transition: background 250ms ease;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
-}
-button:focus,
-button:hover {
-  background-color: var(--colour-deep-black);
 }
 .newsletter {
   display: flex;
@@ -366,6 +356,8 @@ button:hover {
 /* ----- Footer : Matias ----- */
 footer {
   grid-area: 6 / 1 / 7 / 5;
+
+  background-color: var(--colour-black);
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/

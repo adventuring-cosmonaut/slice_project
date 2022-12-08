@@ -31,15 +31,30 @@
           <img
             src="media/ig_logo.svg"
             alt="Instagram Logo"
-            style="margin-left: 18px"
+            style="margin-left: 20px"
           />
         </div>
       </nav>
       <div class="triangle-top"></div>
-      <div id="landing_page" class="landing_page"></div>
+      <div id="landing_page" class="landing_page">
+        <div class="landing_text_container">
+          <div class="landing_left_box">
+            <h1>Lorem ipsum dolor amet consectetur</h1>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              aliquam suscipit eveniet atque unde, autem facere nemo, optio
+              voluptatum repudiandae in, nostrum excepturi ab. Exercitationem
+              nostrum quibusdam</span
+            >
+            <div class="landing_button">
+              <a href="#product_infro_anchor">Læs mere</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <main id="product_infro_anchor">
       <div id="product_intro_section" class="product_intro_section">
         <div class="product_intro_section_inner">
           <h2>Lorem ipsum dolor sit amet.</h2>
@@ -102,19 +117,42 @@
       </div>
 
       <div id="product_slideshow_section" class="product_slideshow_section">
-        <div class="slideshow_container">
-          <div class="slideshow_slide slide_1"></div>
-          <div class="slideshow_slide slide_2"></div>
-          <div class="slideshow_slide slide_3"></div>
-
-          <a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="slideshow_prev_button" class="slideshow_prev_button">
+          <img
+            src="/media/caret-left-fill.svg"
+            alt=""
+            id="slideshow_prev_button_click"
+            class="slideshow_button"
+          />
         </div>
-
-        <div class="dots_container">
-          <span class="slideshow_dot" onclick="currentSlide(1)"></span>
-          <span class="slideshow_dot" onclick="currentSlide(2)"></span>
-          <span class="slideshow_dot" onclick="currentSlide(3)"></span>
+        <div id="slideshow_image_container" class="slideshow_image_container">
+          <img src="" alt="" id="slideshow_image" id="slideshow_image" />
+        </div>
+        <div id="slideshow_next_button" class="slideshow_next_button">
+          <img
+            src="/media/caret-right-fill.svg"
+            alt=""
+            id="slideshow_next_button_click"
+            class="slideshow_button"
+          />
+        </div>
+        <div class="slideshow_highlight_dots_container">
+          <span
+            id="slideshow_highlight_dot_1"
+            class="slideshow_highlight_dot"
+          ></span>
+          <span
+            id="slideshow_highlight_dot_2"
+            class="slideshow_highlight_dot"
+          ></span>
+          <span
+            id="slideshow_highlight_dot_3"
+            class="slideshow_highlight_dot"
+          ></span>
+          <span
+            id="slideshow_highlight_dot_4"
+            class="slideshow_highlight_dot"
+          ></span>
         </div>
       </div>
 
@@ -139,17 +177,6 @@
         id="product_contact_signup_section"
         class="product_contact_signup_section"
       >
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error
-          accusamus porro natus ratione blanditiis doloribus, temporibus quis
-          hic repellendus, delectus voluptas! Velit beatae perspiciatis sapiente
-          ab, cupiditate quaerat veniam. Illum fugiat soluta ab, minus aut
-          incidunt labore vel animi ipsam, quidem magnam quis eius voluptates
-          cum iusto dolore consequuntur natus dolores sunt officiis nostrum! Eum
-          facilis nobis vel similique aut praesentium vitae. Aliquam nihil optio
-          dolorum eius unde debitis quibusdam in ullam vel voluptatibus.
-        </p>
         <h1>Subscribe to our newsletter</h1>
         <form class="newsletter">
           <input
