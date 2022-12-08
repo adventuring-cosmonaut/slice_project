@@ -340,11 +340,11 @@ input:focus-visible {
 button {
   padding: 0 15px;
   border: none;
-  background-color: var(--colour-black);
   border-radius: 0;
 
   font-size: 5rem;
   text-decoration: none;
+  background-color: var(--colour-black);
   color: var(--colour-white);
 
   transition: background 250ms ease;
