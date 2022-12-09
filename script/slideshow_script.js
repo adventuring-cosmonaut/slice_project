@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.querySelectorAll('.slideshow_slide');
+  let slides = document.querySelectorAll('.slideshow_image');
   let dots = document.querySelectorAll('.slideshow_dot');
   if (n > slides.length) {
     slideIndex = 1;

@@ -117,7 +117,20 @@
       </div>
 
       <div id="product_slideshow_section" class="product_slideshow_section">
-        
+        <div id="slides_container" class="slides_container">
+          <div id="slideshow_slide_1" class="slideshow_image slide_1"></div>
+          <div id="slideshow_slide_2" class="slideshow_image slide_2"></div>
+          <div id="slideshow_slide_3" class="slideshow_image slide_3"></div>
+        </div>
+
+        <a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="slideshow_dot_container">
+          <span class="slideshow_dot" onclick="currentSlide(1)"></span>
+          <span class="slideshow_dot" onclick="currentSlide(2)"></span>
+          <span class="slideshow_dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
 
       <div id="info_banner_section" class="info_banner_section">
