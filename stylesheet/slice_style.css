@@ -118,8 +118,8 @@ nav {
 .landing_text_container .landing_left_box h1 {
   margin-bottom: 40px;
 
-  font-size: clamp(2rem, 6rem, 8rem);
-  line-height: clamp(4rem, 8rem, 10rem);
+  font-size: clamp(2rem, 8rem, 8rem);
+  line-height: clamp(4rem, 10rem, 10rem);
 
   color: var(--colour-white);
 }
