@@ -367,7 +367,7 @@ main {
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
 }
-input {
+input[type='email'] {
   outline: none;
   width: 100%;
   padding: 25px 1rem;
@@ -376,13 +376,13 @@ input {
   font-family: 'Poppins';
   font-size: 18px;
 }
-input:invalid {
+input[type='email']:invalid {
   border-color: var(--colour-dark-red);
 }
-input:valid {
+input[type='email']:valid {
   border-color: black;
 }
-input:active {
+input[type='email']:active {
   border-radius: none;
 }
 button {
@@ -401,8 +401,58 @@ button {
 button:hover {
   background-color: var(--colour-dark-red);
 }
+.checkbox-control {
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin-top: 2rem;
+}
+input[type='checkbox'] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+.checkbox-control + .checkbox-control {
+  margin-top: 1em;
+}
+
+input[type='checkbox']::before {
+  content: '';
+
+  width: 0.65em;
+  height: 0.65em;
+  background-color: CanvasText;
+
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+}
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
 .newsletter {
-  display: flex;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
