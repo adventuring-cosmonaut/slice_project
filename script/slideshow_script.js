@@ -50,5 +50,5 @@ window.addEventListener('scroll', () => {
 
   setTimeout(() => {
     triangleTop.style.top = '100px';
-  }, 800);
+  }, 700);
 });

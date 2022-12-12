@@ -88,7 +88,7 @@ nav {
   border-width: 2vh 100vw 0 0;
 
   /* Add a transition to animate the element's position change */
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 /* ----- Landing Page : Matias ----- */
@@ -247,9 +247,9 @@ main {
 .overview_text_section p {
   margin-top: 3%;
 
-  line-height: 20px;
+  line-height: 1.4em;
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
