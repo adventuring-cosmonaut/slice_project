@@ -215,25 +215,22 @@ main {
 }
 
 .knife_overview_image_placeholder {
-  width: 50%;
+  width: 40%;
   height: 100%;
-
-  background: center / contain no-repeat
-    url('../media/knife_overview_placeholder.png');
-
+  margin: 0 5%;
   border: none;
+  background: center / 150% no-repeat url('../media/slice_fall_knife.jpg');
 }
 
 .overview_text_section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   justify-self: right;
-  align-items: center;
 
   width: 50%;
   height: 100%;
-
   border: none;
 }
 
@@ -323,9 +320,9 @@ main {
   width: 15px;
   height: 15px;
   margin: 0 5px;
+  margin-top: 10px;
   border-radius: 50%;
   background-color: #bbb;
-  margin-top: 10px;
 
   cursor: pointer;
 }
@@ -417,12 +414,11 @@ button:hover {
 
 /* ----- Footer : Chris ----- */
 footer {
+  display: flex;
+  flex-wrap: wrap;
   grid-area: 6 / 1 / 7 / 5;
 
   background-color: var(--colour-black);
-
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .footer_links {
@@ -434,24 +430,25 @@ footer {
 }
 
 .footer_logo_container {
-  grid-area: 3 / 1 / 4 / 4;
-
   display: flex;
+  grid-area: 3 / 1 / 4 / 4;
   align-items: center;
   justify-content: center;
 }
 
 .footer_logo {
   position: absolute;
-  transform: scale(1.6);
+
   margin-top: 35px;
+
+  transform: scale(1.6);
 }
 
 .footer_links_wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  flex-direction: column;
 }
 
 .flw_1 {
@@ -468,15 +465,15 @@ footer {
 }
 
 .footer_links_wrapper a:hover {
-  cursor: pointer;
   text-decoration: underline;
   color: var(--colour-grey);
+
+  cursor: pointer;
 }
 
 .footer_some_links {
-  grid-area: 5 / 1 / 6 / 4;
-
   display: flex;
+  grid-area: 5 / 1 / 6 / 4;
   align-items: center;
   justify-content: center;
 }
@@ -497,7 +494,6 @@ footer {
 .footer_map iframe {
   width: 80%;
   height: 80%;
-
   border-radius: 10px;
 }
 
@@ -508,12 +504,10 @@ footer {
 
   width: 100%;
   height: 7%;
-
-  color: var(--colour-grey);
+  background-color: var(--colour-dark-grey);
 
   font-size: 1.2rem;
-
-  background-color: var(--colour-dark-grey);
+  color: var(--colour-grey);
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
