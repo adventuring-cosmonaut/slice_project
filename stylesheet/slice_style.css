@@ -207,6 +207,8 @@ main {
   grid-area: 4 / 2 / 5 / 4;
   display: flex;
 
+  margin: 100px 0;
+
   border: none;
 }
 
