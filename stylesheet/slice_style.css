@@ -225,9 +225,7 @@ main {
 .overview_text_section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  justify-self: right;
 
   width: 50%;
   height: 100%;
