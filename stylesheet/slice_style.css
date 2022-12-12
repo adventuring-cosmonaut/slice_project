@@ -243,8 +243,14 @@ main {
   border: none;
 }
 
-.overview_text_section h2 {
-  margin-top: 9%;
+.overview_h2_1 {
+  font-size: 3em;
+
+  color: var(--colour-light-red);
+}
+
+.overview_h2 {
+  margin-top: 6%;
   font-size: 3em;
 
   color: var(--colour-light-red);
