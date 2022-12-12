@@ -136,11 +136,12 @@ nav {
 
 .landing_button a {
   padding: 12px 25px;
-
-  color: var(--colour-white);
   background-color: var(--colour-dark-red);
 
   text-decoration: none;
+  color: var(--colour-white);
+
+  transition: 300ms ease;
 }
 
 .landing_button a:hover {
@@ -383,13 +384,20 @@ input:active {
   border-radius: none;
 }
 button {
+  margin-left: -2px;
   padding: 0 15px;
+  border: none;
   background-color: var(--colour-black);
 
   font-size: 5rem;
   color: var(--colour-white);
 
+  transition: 300ms ease;
+
   cursor: pointer;
+}
+button:hover {
+  background-color: var(--colour-dark-red);
 }
 .newsletter {
   display: flex;
