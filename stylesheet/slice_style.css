@@ -242,14 +242,13 @@ main {
 }
 
 .overview_text_section h2 {
+  margin-top: 9%;
   font-size: 3em;
 
   color: var(--colour-light-red);
 }
 
 .overview_text_section p {
-  margin-top: 3%;
-
   line-height: 1.4em;
   text-align: justify;
   font-size: 1em;
@@ -363,6 +362,7 @@ main {
 }
 .product_contact_signup_section p {
   margin-bottom: 8rem;
+  text-align: justify;
 }
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
