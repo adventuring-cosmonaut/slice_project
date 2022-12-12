@@ -355,6 +355,12 @@ main {
 .product_contact_signup_section {
   grid-area: 10 / 2 / 11 / 4;
 }
+.product_contact_signup_section h3 {
+  margin-bottom: 1rem;
+}
+.product_contact_signup_section p {
+  margin-bottom: 8rem;
+}
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
 }
