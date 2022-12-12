@@ -9,6 +9,8 @@
   --colour-light-red: #ef233c;
   --colour-dark-red: #d80032;
   --colour-black: #0b0b0b;
+  --colour-grey: #484848;
+  --colour-dark-grey: #121212;
 }
 
 * {
@@ -407,13 +409,7 @@ button:hover {
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
-/* ----- Footer : Matias ----- */
-footer {
-  grid-area: 6 / 1 / 7 / 5;
-
-  background-color: var(--colour-black);
-}
-
+/* ----- Footer : Chris ----- */
 footer {
   grid-area: 6 / 1 / 7 / 5;
 
@@ -425,13 +421,14 @@ footer {
 
 .footer_links {
   display: grid;
-  grid-template: repeat(6, 1fr) / repeat(8, 1fr);
+  grid-template: repeat(7, 1fr) / repeat(8, 1fr);
 
   width: 60%;
+  max-height: 93%;
 }
 
 .footer_logo_container {
-  grid-area: 1 / 1 / 3 / 4;
+  grid-area: 3 / 1 / 4 / 4;
 
   display: flex;
   align-items: center;
@@ -439,22 +436,24 @@ footer {
 }
 
 .footer_logo {
-  transform: scale(1.3);
+  position: absolute;
+  transform: scale(1.6);
+  margin-top: 35px;
 }
 
 .footer_links_wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
 }
 
 .flw_1 {
-  grid-area: 3 / 2 / 6 / 4;
+  grid-area: 3 / 4 / 6 / 6;
 }
 
 .flw_2 {
-  grid-area: 3 / 5 / 6 / 7;
+  grid-area: 3 / 6 / 6 / 9;
 }
 
 .footer_links_wrapper a {
@@ -469,15 +468,15 @@ footer {
 }
 
 .footer_some_links {
-  grid-area: 4 / -1 / 5 / -2;
+  grid-area: 5 / 1 / 6 / 4;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .footer_some_links img {
+  margin: 0 5%;
 }
 
 .footer_map {
@@ -492,20 +491,23 @@ footer {
 .footer_map iframe {
   width: 80%;
   height: 80%;
-  margin-top: 10%;
 
   border-radius: 10px;
 }
 
 .copyright_mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 7%;
 
   color: var(--colour-grey);
 
-  text-align: center;
-
   font-size: 1.2rem;
+
+  background-color: var(--colour-dark-grey);
 }
 
 /* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
