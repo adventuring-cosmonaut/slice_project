@@ -215,7 +215,8 @@ main {
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
   grid-area: 2 / 2 / 3 / 4;
-  height: 100%;
+  height: 80vh;
+  width: 100%;
 }
 .product_intro_section_inner {
   display: grid;
@@ -223,11 +224,6 @@ main {
     'header header'
     'big-img-template small-img-template-1'
     'big-img-template small-img-template-2';
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: max-content 30% 30%;
-
-  height: 1000px;
-
   gap: 1em;
 }
 .product_intro_section_inner > h2 {
@@ -249,14 +245,13 @@ main {
 }
 .big-img-template {
   width: 100%;
-  height: 100%;
-
+  height: 615px;
   object-fit: cover;
 }
 .small-img-template-1,
 .small-img-template-2 {
   width: 100%;
-  height: 100%;
+  height: 300px;
 
   object-fit: cover;
 }
