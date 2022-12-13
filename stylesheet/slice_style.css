@@ -570,8 +570,3 @@ footer {
   font-size: 1.2rem;
   color: var(--colour-grey);
 }
-
-/* =====vvvvvvvvvv===== RESPONSIVE =====vvvvvvvvvv=====*/
-
-@media screen and (max-width: px) {
-}
