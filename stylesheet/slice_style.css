@@ -208,23 +208,25 @@ main {
   display: grid;
   grid-area: 2 / 1 / 6 / 5;
   grid-template:
-    3% 80vh 3% 80vh 3% 80vh 3% 250px 3% 1fr 3% / 1fr repeat(2, 1.5fr)
+    5% 80vh 5% 80vh 5% 80vh 5% 250px 5% 1fr 5% / 1fr repeat(2, 1.5fr)
     1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
   grid-area: 2 / 2 / 3 / 4;
-
-  margin-top: 50px;
+  height: 100%;
 }
 .product_intro_section_inner {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     'header header'
     'big-img-template small-img-template-1'
     'big-img-template small-img-template-2';
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: max-content 30% 30%;
+
+  height: 1000px;
 
   gap: 1em;
 }
@@ -261,12 +263,12 @@ main {
 
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
-  grid-area: 4 / 2 / 5 / 4;
   display: flex;
-
+  grid-area: 4 / 2 / 5 / 4;
   justify-content: space-between;
-  gap: 1em;
   border: none;
+
+  gap: 3em;
 }
 
 .knife_overview_image_placeholder {
@@ -293,22 +295,23 @@ main {
 }
 
 .overview_h2_1 {
-  font-size: 3em;
+  font-size: 3.5em;
 
   color: var(--colour-light-red);
 }
 
 .overview_h2 {
   margin-top: 6%;
-  font-size: 3em;
+  font-size: 3.5em;
 
   color: var(--colour-light-red);
 }
 
 .overview_text_section p {
   line-height: 1.4em;
-  text-align: justify;
+
   font-size: 1em;
+  font-weight: 400;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
@@ -408,6 +411,11 @@ main {
 }
 .info_banner_section_inner img {
   max-height: 64px;
+}
+
+.info_banner_section_inner b {
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 /* ----- Contact & Signup Section : Mads ----- */
@@ -528,6 +536,8 @@ footer {
   flex-wrap: wrap;
   grid-area: 6 / 1 / 7 / 5;
 
+  height: 100%;
+  margin-top: 250px;
   background-color: var(--colour-black);
 }
 
