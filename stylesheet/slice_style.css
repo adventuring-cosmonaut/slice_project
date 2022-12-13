@@ -97,8 +97,56 @@ nav {
   transition: all 0.7s ease-in-out;
 }
 
-.nav_burg_menu {
-  background: center / cover no-repeat url("../media/");
+.nav_burg_menu_handle {
+  display: none;
+
+  position: absolute;
+  right: 50px;
+
+  transition: 170ms;
+}
+
+.burg_menu_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.846);
+
+  font-size: 3em;
+  color: var(--colour-white);
+
+  cursor: pointer;
+}
+
+.burg_menu_content {
+  position: absolute;
+  right: -150px;
+  top: 101px;
+
+  width: 150px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.846);
+
+  text-align: center;
+
+  transition: 170ms;
+
+  line-height: 35px;
+}
+
+.burg_menu_content a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--colour-white);
+}
+
+.burg_some_icon {
+  margin-top: 20px;
+}
+
+.burg_content_slide {
+  right: 0;
 }
 
 /* ----- Landing Page : Matias ----- */
