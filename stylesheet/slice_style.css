@@ -405,13 +405,21 @@ button:hover {
   background-color: var(--colour-dark-red);
 }
 .checkbox-control {
-  font-weight: bold;
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
   gap: 0.5em;
   margin-top: 2rem;
 }
+
+.privacy_underline {
+  text-decoration: underline;
+}
+
+.privacy_underline:hover {
+  cursor: pointer;
+}
+
 input[type='checkbox'] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
