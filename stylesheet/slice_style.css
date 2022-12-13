@@ -218,6 +218,7 @@ main {
   height: 80vh;
   width: 100%;
 }
+
 .product_intro_section_inner {
   display: grid;
   grid-template-areas:
@@ -226,28 +227,35 @@ main {
     'big-img-template small-img-template-2';
   gap: 1em;
 }
+
 .product_intro_section_inner > h2 {
   grid-area: header;
 }
+
 .product_intro_section_inner > p {
   grid-area: header;
 
   margin-bottom: 1em;
 }
+
 .product_intro_section_inner > .big-img-template {
   grid-area: big-img-template;
 }
+
 .product_intro_section_inner > .small-img-template-1 {
   grid-area: small-img-template-1;
 }
+
 .product_intro_section_inner > .small-img-template-2 {
   grid-area: small-img-template-2;
 }
+
 .big-img-template {
   width: 100%;
   height: 615px;
   object-fit: cover;
 }
+
 .small-img-template-1,
 .small-img-template-2 {
   width: 100%;
@@ -262,7 +270,6 @@ main {
   grid-area: 4 / 2 / 5 / 4;
   justify-content: space-between;
   border: none;
-
   gap: 3em;
 }
 
@@ -270,7 +277,7 @@ main {
   width: 50%;
   height: 100%;
   border: none;
-  background: center / 100% no-repeat url('../media/slice_fall_knife.jpg');
+  background: center / 100vh no-repeat url('../media/slice_fall_knife.jpg');
 }
 
 .overview_text_section {
