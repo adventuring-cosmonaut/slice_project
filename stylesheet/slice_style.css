@@ -139,6 +139,11 @@ nav {
   font-size: 1.8rem;
   text-decoration: none;
   color: var(--colour-white);
+  cursor: pointer;
+}
+
+.burg_menu_content a:hover {
+  color: var(--colour-grey);
 }
 
 .burg_some_icon {
