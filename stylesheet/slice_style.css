@@ -535,7 +535,7 @@ input[type='checkbox']:checked::before {
 }
 .newsletter {
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 79px;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
