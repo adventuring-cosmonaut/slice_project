@@ -6,4 +6,8 @@
   .menu_links {
     display: none;
   }
+
+  .nav_burg_menu_handle {
+    display: flex;
+  }
 }
