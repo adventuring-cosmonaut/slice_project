@@ -97,6 +97,10 @@ nav {
   transition: all 0.7s ease-in-out;
 }
 
+.nav_burg_menu {
+  background: center / cover no-repeat url("../media/");
+}
+
 /* ----- Landing Page : Matias ----- */
 .landing_page {
   display: flex;
