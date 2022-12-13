@@ -14,6 +14,7 @@
       href="./media/knife-svgrepo-com.svg"
     />
     <link rel="stylesheet" href="./stylesheet/slice_style.css" />
+    <link rel="stylesheet" href="./stylesheet/media_queries.css">
   </head>
   <body>
     <header>
@@ -28,10 +29,11 @@
           </a>
         </div>
         <div class="menu_links">
-          <a href="#">Text 1</a>
-          <a href="#">Text 1</a>
-          <a href="#">Text 1</a>
-          <a href="#">Text 1</a>
+          <a href="#product_intro_section">Intro</a>
+          <a href="#product_overview_section">About</a>
+          <a href="#product_slideshow_section">Slideshow</a>
+          <a href="#info_banner_section">Info</a>
+          <a href="#product_contact_signup_section">Newsletter</a>
         </div>
         <div class="menu_social">
           <img src="media/fb_logo.svg" alt="Facebook Logo" />
@@ -73,21 +75,9 @@
             collection, this high-quality knife will elevate your cooking
             experience. Order now and discover the benefits for yourself."
           </p>
-          <img
-            class="big-img-template"
-            src="media/big-img-template.svg"
-            alt=""
-          />
-          <img
-            class="small-img-template-1"
-            src="media/small-img-template.svg"
-            alt=""
-          />
-          <img
-            class="small-img-template-2"
-            src="media/small-img-template.svg"
-            alt=""
-          />
+          <img class="big-img-template" src="media/DSCF5092.jpg" alt="" />
+          <img class="small-img-template-1" src="media/DSCF4981.jpg" alt="" />
+          <img class="small-img-template-2" src="media/DSCF4998.jpg" alt="" />
         </div>
       </div>
 
@@ -167,13 +157,9 @@
         <h3>Elevate Your Cooking by subscribing to our newsletter</h3>
         <p>
           Subscribing to our newsletter is a great way to stay up-to-date on the
-          latest information and offers related to our high-quality red kitchen
-          knife. By subscribing, you'll receive regular updates and exclusive
-          offers to help you make the most of your red kitchen knife. Don't miss
-          out on this opportunity to enhance your kitchen skills and make your
-          cooking more enjoyable. Subscribe to our newsletter today and join the
-          ranks of satisfied customers who have already discovered the benefits
-          of our red kitchen knife.
+          latest information and offers related to our high-quality knives. When
+          subscribed, you'll receive regular updates and exclusive offers to
+          help you make the most of your product.
         </p>
         <h1>Subscribe to our newsletter</h1>
         <form class="newsletter">
@@ -183,6 +169,13 @@
             placeholder="Type your email address"
           />
           <button type="submit"><i class="bi bi-arrow-right"></i></button>
+          <label class="checkbox-control">
+            <input type="checkbox" id="sound-checkbox" />
+            <p>
+              When you sign up for our newletter, you also accept our
+              <a class="privacy_underline">privacy policy</a>
+            </p>
+          </label>
         </form>
       </div>
     </main>
@@ -199,7 +192,7 @@
             >Introduction</a
           >
           <a href="#product_overview_section" class="footer_page_links_text"
-            >Overview</a
+            >About</a
           >
         </div>
         <div class="footer_links_wrapper flw_2">
@@ -241,5 +234,6 @@
     </footer>
 
     <script src="/script/slideshow_script.js"></script>
+    <script src="/script/checkbox.js"></script>
   </body>
 </html>
