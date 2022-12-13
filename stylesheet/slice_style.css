@@ -282,7 +282,10 @@ main {
   width: 50%;
   height: 100%;
   border: none;
-  background: center / 100vh no-repeat url('../media/slice_fall_knife.jpg');
+  background-image: url('../media/slice_fall_knife.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .overview_text_section {
