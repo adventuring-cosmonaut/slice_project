@@ -164,7 +164,7 @@ nav {
   display: grid;
   grid-template: minmax(550px, 500px) / 100%;
 
-  margin: 180px 10vw 0;
+  margin: 150px 10vw 0;
 }
 
 .landing_left_box {
@@ -207,7 +207,9 @@ nav {
 main {
   display: grid;
   grid-area: 2 / 1 / 6 / 5;
-  grid-template: 3% 1fr 3% 1fr 3% 1fr 3% 250px 3% 1fr 3% / 1fr repeat(2, 2fr) 1fr;
+  grid-template:
+    3% 80vh 3% 80vh 3% 80vh 3% 250px 3% 1fr 3% / 1fr repeat(2, 1.5fr)
+    1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
@@ -262,23 +264,22 @@ main {
   grid-area: 4 / 2 / 5 / 4;
   display: flex;
 
-  margin: 100px 0;
-
+  justify-content: space-between;
+  gap: 1em;
   border: none;
 }
 
 .knife_overview_image_placeholder {
-  width: 40%;
+  width: 50%;
   height: 100%;
-  margin: 0 5%;
   border: none;
-  background: center / 150% no-repeat url('../media/slice_fall_knife.jpg');
+  background: center / 100% no-repeat url('../media/slice_fall_knife.jpg');
 }
 
 .overview_text_section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
   width: 50%;
   height: 100%;
