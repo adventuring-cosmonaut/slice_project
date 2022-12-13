@@ -532,7 +532,7 @@ input[type='checkbox']:checked::before {
 }
 .newsletter {
   display: grid;
-  grid-template-columns: 1fr 81px;
+  grid-template-columns: 1fr 79px;
 }
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
