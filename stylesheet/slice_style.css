@@ -77,6 +77,10 @@ nav {
   width: 100px;
 }
 
+.menu_social img {
+  cursor: pointer;
+}
+
 .triangle-top {
   display: inline-block;
 
@@ -536,6 +540,7 @@ footer {
 
 .footer_some_links img {
   margin: 0 5%;
+  cursor: pointer;
 }
 
 .footer_map {
