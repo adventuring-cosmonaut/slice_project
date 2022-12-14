@@ -372,18 +372,16 @@ main {
 
   text-align: center;
 }
-.info_banner_section * {
-  border: none;
-}
+
 .info_banner_section_inner p {
   color: white;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 .info_banner_section_inner img {
-  max-height: 64px;
+  height: clamp(30px, 6vw, 64px);
 }
 
 .info_banner_section_inner b {
-  letter-spacing: 1px;
   font-weight: 600;
 }
 
@@ -405,7 +403,7 @@ main {
   margin-bottom: 1rem;
 }
 .product_contact_signup_section p {
-  font-size: clamp(1rem, 1.5vw, 0.9em);
+  font-size: clamp(1.1rem, 1.5vw, 0.9em);
   margin-bottom: 8rem;
   text-align: justify;
 }
