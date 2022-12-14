@@ -219,8 +219,8 @@ main {
 .product_intro_section {
   grid-area: 2 / 3 / 3 / 5;
   display: grid;
-  grid-template: 0.75fr repeat(2, 1fr) / repeat(2, 1fr);
-  gap: 20px;
+  grid-template: max-content repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 1em;
   width: 100%;
 }
 
@@ -232,11 +232,13 @@ main {
 }
 
 .intro_text_section h2 {
-  font-size: clamp(1em, 4vw, 3em);
+  font-size: clamp(1em, 1.3vw, 3em);
+  line-height: 3em;
 }
 
 .intro_text_section p {
-  font-size: clamp(1rem, 1.9vw, 1em);
+  font-size: clamp(1rem, 1.5vw, 0.9em);
+  padding-bottom: 0.5em;
 }
 
 .product_intro_image_1 {
@@ -399,9 +401,11 @@ main {
 }
 
 .product_contact_signup_section h3 {
+  font-size: clamp(1em, 1vw, 3em);
   margin-bottom: 1rem;
 }
 .product_contact_signup_section p {
+  font-size: clamp(1rem, 1.5vw, 0.9em);
   margin-bottom: 8rem;
   text-align: justify;
 }
@@ -415,7 +419,7 @@ input[type='email'] {
   border: 2px solid #000;
 
   font-family: 'Poppins';
-  font-size: 18px;
+  font-size: 15px;
 }
 input[type='email']:invalid {
   border-color: var(--colour-dark-red);
@@ -432,7 +436,7 @@ button {
   border: none;
   background-color: var(--colour-black);
 
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--colour-white);
 
   transition: 300ms ease;
@@ -448,6 +452,10 @@ button:hover {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   margin-top: 2rem;
+}
+
+.checkbox-control p {
+  font-size: clamp(1rem, 1.5vw, 0.9em);
 }
 
 .privacy_underline {
