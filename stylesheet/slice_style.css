@@ -232,12 +232,12 @@ main {
 }
 
 .intro_text_section h2 {
-  font-size: clamp(1em, 1.3vw, 3em);
-  line-height: 3em;
+  font-size: clamp(1.3em, 2vw, 5em);
+  margin-bottom: 15px;
 }
 
 .intro_text_section p {
-  font-size: clamp(1rem, 1.5vw, 0.9em);
+  font-size: clamp(1.2rem, 1.5vw, 0.9em);
   padding-bottom: 0.5em;
 }
 
@@ -277,7 +277,9 @@ main {
 .overview_text_section p {
   line-height: 1.4em;
 
-  font-size: clamp(1rem, 1.5vw, 0.9em);
+  text-align: justify;
+
+  font-size: clamp(0.6rem, 1.8vw, 0.9em);
   font-weight: 400;
 }
 
