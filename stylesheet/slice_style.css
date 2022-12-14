@@ -275,6 +275,8 @@ main {
 .overview_text_section p {
   line-height: 1.4em;
 
+  text-align: justify;
+
   font-size: clamp(0.6rem, 1.8vw, 0.9em);
   font-weight: 400;
 }
