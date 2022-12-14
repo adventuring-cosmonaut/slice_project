@@ -220,7 +220,7 @@ main {
   grid-area: 2 / 3 / 3 / 5;
   display: grid;
   grid-template: 1fr repeat(2, 1fr) / repeat(2, 1fr);
-  grid-gap: 3%;
+  grid-gap: 20px;
   width: 100%;
 }
 
