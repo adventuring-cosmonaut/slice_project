@@ -21,3 +21,6 @@ window.addEventListener('scroll', () => {
     triangleTop.style.top = '100px';
   }, 700);
 });
+
+const orderAlert = () =>
+  alert("Thank you for your order! It will ship within: [SHIPPING TIME] days!        And don't worry, we know where you live...");

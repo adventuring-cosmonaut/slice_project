@@ -125,22 +125,22 @@ nav {
 
 .burg_menu_content {
   position: absolute;
-  right: -150px;
+  right: -250px;
   top: 101px;
 
-  width: 150px;
+  width: 250px;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.846);
+  background-color: rgba(0, 0, 0, 0.9);
 
   text-align: center;
 
   transition: 170ms;
 
-  line-height: 35px;
+  line-height: 45px;
 }
 
 .burg_menu_content a {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   text-decoration: none;
   color: var(--colour-white);
   cursor: pointer;
@@ -206,6 +206,11 @@ nav {
   color: var(--colour-white);
 
   transition: 300ms ease;
+}
+
+.order_now {
+  margin-left: 2%;
+  cursor: pointer;
 }
 
 .landing_button a:hover {
