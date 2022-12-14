@@ -299,15 +299,15 @@ main {
 }
 
 .slide_1 {
-  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_1.jpg');
+  background: center / cover no-repeat url('../media/slice-slide-1.jpg');
 }
 
 .slide_2 {
-  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_2.jpg');
+  background: center / cover no-repeat url('../media/slice-slide-2.jpg');
 }
 
 .slide_3 {
-  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_3.jpg');
+  background: center / cover no-repeat url('../media/slice-slide-3.jpg');
 }
 
 .slideshow_prev,
