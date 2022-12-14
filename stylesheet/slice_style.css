@@ -271,7 +271,7 @@ main {
 
 .overview_h2 {
   color: var(--colour-light-red);
-  font-size: clamp(1em, 4vw, 3.2em);
+  font-size: clamp(1.8em, 4vw, 3.2em);
 }
 
 .overview_text_section p {
@@ -279,7 +279,7 @@ main {
 
   text-align: justify;
 
-  font-size: clamp(0.6rem, 1.8vw, 0.9em);
+  font-size: clamp(1.2rem, 1.8vw, 0.9em);
   font-weight: 400;
 }
 
