@@ -129,10 +129,62 @@
     grid-template: 20vh 80vh 20vh 80vh 20vh 50vh 20vh 30vh 15vh 50vh 15vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
   }
 
+  .nav_bar {
+    height: 100px;
+    padding: 0px 10vw;
+    background-color: var(--colour-black);
+  }
+
+  .nav_bar_logo {
+    width: 80px;
+    background: center / contain no-repeat url('../media/slice_white_logo.svg');
+  }
+
+  .triangle-top {
+    display: none;
+  }
+
+  .landing_text_container {
+    margin: 50px 10vw 0;
+  }
+
+  .intro_text_section h2 {
+    margin-top: -60px;
+  }
+
+  .overview_h2 {
+    color: var(--colour-light-red);
+    font-size: 2em
+  }
+
+  .product_overview_section {
+    margin-top: -50px;
+    gap: 7%;
+  }
+
   .knife_overview_image {
     min-width: 0;
     max-height: none;
     /* background: center / cover no-repeat url('../media/slice_fall_knife.jpg'); */
+  }
+
+  .overview_text_section p {
+    text-align: left;
+  }
+
+  .product_contact_signup_section h1 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  input[type='email'] {
+    outline: none;
+    width: 100%;
+    padding: 15px 1rem;
+    border: 2px solid #000;
+
+    font-family: 'Poppins';
+    font-size: 15px;
   }
 
   .footer_links {
@@ -145,6 +197,7 @@
   }
 
   .footer_logo {
+    width: 3em;
     margin-top: 0;
   }
 

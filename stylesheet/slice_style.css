@@ -190,7 +190,7 @@ nav {
 
 .landing_left_box span {
   line-height: 3rem;
-
+  font-size: clamp(1em, 1vw, 2rem);
   color: var(--colour-white);
 }
 
@@ -246,7 +246,7 @@ main {
 }
 
 .intro_text_section p {
-  font-size: clamp(1.2rem, 1.5vw, 1em);
+  font-size: clamp(1.4rem, 1.5vw, 1em);
   padding-bottom: 0.5em;
 }
 
@@ -280,15 +280,15 @@ main {
 
 .overview_h2 {
   color: var(--colour-light-red);
-  font-size: clamp(1.8em, 4vw, 3.2em);
+  font-size: clamp(4em, 4vw, 5rem);
 }
 
 .overview_text_section p {
-  line-height: 1.4em;
+  line-height: 1.3em;
 
   text-align: justify;
 
-  font-size: clamp(1.2rem, 1.5vw, 1em);
+  font-size: clamp(1.8rem, 1.5vw, 1em);
   font-weight: 400;
 }
 
@@ -371,6 +371,7 @@ main {
 
   background-color: var(--colour-black);
 }
+
 .info_banner_section_inner {
   display: flex;
   align-items: center;
@@ -411,14 +412,17 @@ main {
   font-size: clamp(1em, 1vw, 3em);
   margin-bottom: 1rem;
 }
+
 .newsletter_description {
   font-size: clamp(1.1rem, 1.5vw, 1em);
   margin-bottom: 8rem;
   text-align: justify;
 }
+
 .product_contact_signup_section > h1 {
   margin-bottom: 2rem;
 }
+
 input[type='email'] {
   outline: none;
   width: 100%;
@@ -428,15 +432,19 @@ input[type='email'] {
   font-family: 'Poppins';
   font-size: 15px;
 }
+
 input[type='email']:invalid {
   border-color: var(--colour-dark-red);
 }
+
 input[type='email']:valid {
   border-color: black;
 }
+
 input[type='email']:active {
   border-radius: none;
 }
+
 button {
   margin-left: -2px;
   padding: 0 15px;
@@ -450,9 +458,11 @@ button {
 
   cursor: pointer;
 }
+
 button:hover {
   background-color: var(--colour-dark-red);
 }
+
 .checkbox-control {
   line-height: 1.1;
   display: grid;
