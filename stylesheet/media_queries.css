@@ -1,10 +1,10 @@
 @media screen and (max-width: 1100px) {
   body {
-    grid-template: 100vh 440vh 55vh / 1fr repeat(2, 4fr) 1fr;
+    grid-template: 100vh 420vh 55vh / 1fr repeat(2, 4fr) 1fr;
   }
 
   main {
-    grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 20vh 50vh 20vh / 0.5fr 35px repeat(2, 1.5fr) 35px 0.5fr;
+    grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 10vh 50vh 10vh / 0.5fr 35px repeat(2, 1.5fr) 35px 0.5fr;
   }
 
   .product_overview_section {
@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 950px) {
   body {
-    grid-template: 100vh 440vh 70vh / 1fr repeat(2, 4fr) 1fr;
+    grid-template: 100vh 420vh 70vh / 1fr repeat(2, 4fr) 1fr;
   }
 
   .menu_social {
@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 750px) {
   main {
-    grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 20vh 50vh 20vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
+    grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 10vh 50vh 10vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
   }
 
   .product_intro_section {
@@ -122,11 +122,11 @@
 
 @media screen and (max-width: 500px) {
   body {
-    grid-template: 100vh 410vh 70vh / 1fr repeat(2, 4fr) 1fr;
+    grid-template: 100vh 390vh 70vh / 1fr repeat(2, 4fr) 1fr;
   }
 
   main {
-    grid-template: 20vh 80vh 20vh 80vh 20vh 50vh 20vh 30vh 20vh 50vh 20vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
+    grid-template: 20vh 80vh 20vh 80vh 20vh 50vh 20vh 30vh 10vh 50vh 10vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
   }
 
   .knife_overview_image {
