@@ -9,8 +9,8 @@
   --colour-light-red: #ef233c;
   --colour-dark-red: #d80032;
   --colour-black: #0b0b0b;
-  --colour-grey: #484848;
-  --colour-dark-grey: #121212;
+  --colour-grey: #878787;
+  --colour-dark-grey: #141414;
 }
 
 * {
@@ -305,15 +305,15 @@ main {
 
 .overview_h2 {
   color: var(--colour-light-red);
-  font-size: clamp(4em, 4vw, 5rem);
+  font-size: clamp(3em, 4vw, 5rem);
 }
 
 .overview_text_section p {
-  line-height: 1.3em;
+  line-height: 1.35em;
 
   text-align: justify;
 
-  font-size: clamp(1.8rem, 1.5vw, 1em);
+  font-size: clamp(1.5rem, 1.5vw, 1em);
   font-weight: 400;
 }
 
@@ -410,7 +410,7 @@ main {
 
 .info_banner_section_inner p {
   color: white;
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .info_banner_section_inner img {
