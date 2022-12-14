@@ -267,8 +267,6 @@ main {
 .intro_text_section p {
   font-size: clamp(1.4rem, 1.5vw, 1em);
   padding-bottom: 0.5em;
-
-  font-size: clamp(1.2rem, 1.5vw, 1em);
 }
 
 .product_intro_image_1 {
@@ -437,7 +435,7 @@ main {
 .product_contact_signup_section h3 {
   margin-bottom: 1rem;
 
-  font-size: clamp(1em, 1vw, 3em);
+  font-size: clamp(1.3em, 1.2vw, 5em);
 }
 
 .newsletter_description {
