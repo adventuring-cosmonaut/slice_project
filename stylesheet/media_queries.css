@@ -165,7 +165,6 @@
   .knife_overview_image {
     min-width: 0;
     max-height: none;
-    /* background: center / cover no-repeat url('../media/slice_fall_knife.jpg'); */
   }
 
   .overview_text_section p {

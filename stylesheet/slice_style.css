@@ -44,7 +44,7 @@ header {
   z-index: 1;
 }
 
-/* ----- Navigation Bar : Matias ----- */
+/* ----- Navigation Bar ----- */
 nav {
   position: fixed;
   z-index: 1;
@@ -70,6 +70,7 @@ nav {
 .menu_links {
   display: flex;
   flex-direction: row;
+
   gap: 50px;
 }
 
@@ -77,10 +78,17 @@ nav {
   font-size: 1.7rem;
   text-decoration: none;
   color: var(--colour-white);
+
+  transition: 170ms;
+}
+
+.menu_links a:hover {
+  transform: scale(1.15);
 }
 
 .menu_social {
   width: 100px;
+  cursor: pointer;
 }
 
 .menu_social img {
@@ -99,7 +107,6 @@ nav {
   border-style: solid;
   border-width: 2vh 100vw 0 0;
 
-  /* Add a transition to animate the element's position change */
   transition: all 0.7s ease-in-out;
 }
 
@@ -140,32 +147,40 @@ nav {
 }
 
 .burg_menu_content a {
+  padding: 0px 15px;
+
   font-size: 2.8rem;
   text-decoration: none;
   color: var(--colour-white);
+
+  transition: 270ms;
+
   cursor: pointer;
 }
 
 .burg_menu_content a:hover {
-  color: var(--colour-grey);
+  background-color: var(--colour-light-grey);
+
+  color: var(--colour-black);
 }
 
 .burg_some_icon {
   margin-top: 20px;
+
+  cursor: pointer;
 }
 
 .burg_content_slide {
   right: 0;
 }
 
-/* ----- Landing Page : Matias ----- */
+/* ----- Landing Page ----- */
 .landing_page {
   display: flex;
   align-items: center;
 
   width: 100%;
   height: 100vh;
-
   background: center / cover no-repeat url('../media/slicebg.jpg');
 }
 
@@ -210,6 +225,7 @@ nav {
 
 .order_now {
   margin-left: 2%;
+
   cursor: pointer;
 }
 
@@ -224,34 +240,40 @@ main {
   grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 10vh 50vh 10vh / 1fr 35px repeat(2, 1.5fr) 35px 1fr;
 }
 
-/* ----- Product Intro Section : Mads ----- */
+/* ----- Product Intro Section ----- */
 .product_intro_section {
-  grid-area: 2 / 3 / 3 / 5;
   display: grid;
   grid-template: max-content repeat(2, 1fr) / repeat(2, 1fr);
-  gap: 1em;
+  grid-area: 2 / 3 / 3 / 5;
+
   width: 100%;
+
+  gap: 1em;
 }
 
 .intro_text_section {
-  grid-area: 1 / 1 / 2 / 3;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  grid-area: 1 / 1 / 2 / 3;
+  justify-content: space-around;
 }
 
 .intro_text_section h2 {
-  font-size: clamp(1.3em, 1.2vw, 5em);
   margin-bottom: 15px;
+
+  font-size: clamp(1.3em, 1.2vw, 5em);
 }
 
 .intro_text_section p {
   font-size: clamp(1.4rem, 1.5vw, 1em);
   padding-bottom: 0.5em;
+
+  font-size: clamp(1.2rem, 1.5vw, 1em);
 }
 
 .product_intro_image_1 {
   grid-area: 2 / 1 / 4 / 2;
+
   background: center / cover no-repeat url('../media/slice-img-1.jpg');
 }
 
@@ -263,17 +285,20 @@ main {
   background: center / cover no-repeat url('../media/slice-img-3.jpg');
 }
 
-/* ----- Product Overview Section : Chris ----- */
+/* ----- Product Overview Section ----- */
 .product_overview_section {
-  grid-area: 4 / 3 / 5 / 5;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-area: 4 / 3 / 5 / 5;
+
   border: none;
+
   gap: 3%;
 }
 
 .knife_overview_image {
   grid-area: 1 / 1 / 4 / 2;
+
   border: none;
   background: center / cover no-repeat url('../media/slice_fall_knife.jpg');
 }
@@ -292,16 +317,16 @@ main {
   font-weight: 400;
 }
 
-/* ----- Product Slideshow Section : Chris ----- */
+/* ----- Product Slideshow Section ----- */
 .product_slideshow_section {
-  grid-area: 6 / 2 / 7 / 6;
-
   display: grid;
   grid-template: 1fr 35px / 35px 16fr 35px;
+  grid-area: 6 / 2 / 7 / 6;
 }
 
 .slides_container {
   grid-area: 1 / 2 / 2 / 3;
+
   position: relative;
 }
 
@@ -365,7 +390,7 @@ main {
   background-color: rgb(110, 110, 110);
 }
 
-/* ----- Information banner : Mads ----- */
+/* ----- Information banner ----- */
 .info_banner_section {
   grid-area: 8 / 1 / 9 / 10;
 
@@ -387,6 +412,7 @@ main {
   color: white;
   font-size: clamp(1rem, 3vw, 2rem);
 }
+
 .info_banner_section_inner img {
   height: clamp(30px, 6vw, 64px);
 }
@@ -395,13 +421,13 @@ main {
   font-weight: 600;
 }
 
-/* ----- Contact & Signup Section : Mads ----- */
+/* ----- Contact & Signup Section ----- */
 .product_contact_signup_section {
-  grid-area: 10 / 3 / 11 / 5;
   display: flex;
+  flex-direction: column;
+  grid-area: 10 / 3 / 11 / 5;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .product_contact_signup_section div {
@@ -409,13 +435,15 @@ main {
 }
 
 .product_contact_signup_section h3 {
-  font-size: clamp(1em, 1vw, 3em);
   margin-bottom: 1rem;
+
+  font-size: clamp(1em, 1vw, 3em);
 }
 
 .newsletter_description {
-  font-size: clamp(1.1rem, 1.5vw, 1em);
   margin-bottom: 8rem;
+
+  font-size: clamp(1.1rem, 1.5vw, 1em);
   text-align: justify;
 }
 
@@ -424,10 +452,10 @@ main {
 }
 
 input[type='email'] {
-  outline: none;
   width: 100%;
   padding: 25px 1rem;
   border: 2px solid #000;
+  outline: none;
 
   font-family: 'Poppins';
   font-size: 15px;
@@ -464,11 +492,13 @@ button:hover {
 }
 
 .checkbox-control {
-  line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
-  gap: 0.5em;
+
   margin-top: 2rem;
+
+  line-height: 1.1;
+  gap: 0.5em;
 }
 
 .checkbox-control p {
@@ -484,24 +514,24 @@ button:hover {
 }
 
 input[type='checkbox'] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* Remove most all native input styles */
-  appearance: none;
-  /* For iOS < 15 */
-  background-color: var(--form-background);
-  /* Not removed via appearance */
-  margin: 0;
-  font: inherit;
+  display: grid;
+
   width: 1.15em;
   height: 1.15em;
+  margin: 0;
   border: 0.15em solid currentColor;
   border-radius: 0.15em;
+  background-color: var(--form-background);
+
+  font: inherit;
+
   transform: translateY(-0.075em);
 
-  display: grid;
+  -webkit-appearance: none;
+  appearance: none;
   place-content: center;
 }
+
 .checkbox-control + .checkbox-control {
   margin-top: 1em;
 }
@@ -519,11 +549,12 @@ input[type='checkbox']::before {
 
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   box-shadow: inset 1em 1em var(--form-control-color);
-  /* Windows High Contrast Mode */
 }
+
 input[type='checkbox']:checked::before {
   transform: scale(1);
 }
+
 .newsletter {
   display: grid;
   grid-template-columns: 1fr 79px;
@@ -531,7 +562,7 @@ input[type='checkbox']:checked::before {
 
 /* =====vvvvvvvvvv===== FOOTER =====vvvvvvvvvv=====*/
 
-/* ----- Footer : Chris ----- */
+/* ----- Footer ----- */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -581,11 +612,11 @@ footer {
 .footer_links_wrapper a {
   text-decoration: none;
   color: var(--colour-white);
+  transition: 170ms;
 }
 
 .footer_links_wrapper a:hover {
-  text-decoration: underline;
-  color: var(--colour-grey);
+  transform: scale(1.2);
 
   cursor: pointer;
 }
