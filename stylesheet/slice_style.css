@@ -30,7 +30,7 @@ html {
 
 body {
   display: grid;
-  grid-template: 100vh 150px 80vh 150px 80vh 150px 80vh 150px 250px 150px 80vh 150px 400px / 1fr 2fr 2fr 1fr;
+  grid-template: 100vh 470vh 55vh / 1fr repeat(2, 1.8fr) 1fr;
 
   font-size: 1.6rem;
 }
@@ -211,124 +211,72 @@ nav {
 
 main {
   display: grid;
-  grid-area: 2 / 1 / 13 / 5;
-  grid-template: 150px 80vh 150px 80vh 150px 80vh 150px 250px 150px 80vh 150px / 1fr repeat(2, 1.5fr) 1fr;
+  grid-area: 2 / 1 / 3 / 5;
+  grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 20vh 80vh 20vh / 1fr 35px repeat(2, 1.5fr) 35px 1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
-  grid-area: 2 / 2 / 3 / 4;
+  grid-area: 2 / 3 / 3 / 5;
   display: grid;
-  grid-template: ;
+  grid-template: 1fr repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 3%;
   width: 100%;
 }
 
-/* .product_intro_section_inner {
-  display: grid;
-  grid-template-areas:
-    'header header'
-    'big-img-template small-img-template-1'
-    'big-img-template small-img-template-2';
-  gap: 1em;
+.intro_text_section {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.product_intro_section_inner > h2 {
-  grid-area: header;
+.product_intro_image_1 {
+  grid-area: 2 / 1 / 4 / 2;
+  background: center / cover no-repeat url('../media/slice-img-1.jpg');
 }
 
-.product_intro_section_inner > p {
-  grid-area: header;
-
-  margin-bottom: 1em;
+.product_intro_image_2 {
+  background: center / cover no-repeat url('../media/slice-img-2.jpg');
 }
 
-.product_intro_section_inner > .big-img-template {
-  grid-area: big-img-template;
+.product_intro_image_3 {
+  background: center / cover no-repeat url('../media/slice-img-3.jpg');
 }
-
-.product_intro_section_inner > .small-img-template-1 {
-  grid-area: small-img-template-1;
-}
-
-.product_intro_section_inner > .small-img-template-2 {
-  grid-area: small-img-template-2;
-}
-
-.big-img-template {
-  width: 100%;
-  
-  object-fit: cover;
-}
-
-.small-img-template-1,
-.small-img-template-2 {
-  width: 100%;
-  
-
-  object-fit: cover;
-} */
 
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
-  display: flex;
-  grid-area: 4 / 2 / 5 / 4;
-  justify-content: space-between;
+  grid-area: 4 / 3 / 5 / 5;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   border: none;
-  gap: 3em;
+  gap: 3%;
 }
 
-.knife_overview_image_placeholder {
-  width: 50%;
-  height: 100%;
+.knife_overview_image {
+  grid-area: 1 / 1 / 4 / 2;
   border: none;
-  background-image: url('../media/slice_fall_knife.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-}
-
-.overview_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  width: 50%;
-  max-height: 100%;
-  border: none;
-}
-
-.overview_text_section h2,
-.overview_text_section p,
-.overview_text_section div {
-  border: none;
-}
-
-.overview_h2_1 {
-  font-size: 3.5em;
-
-  color: var(--colour-light-red);
+  background: center / cover no-repeat url('../media/slice_fall_knife.jpg');
 }
 
 .overview_h2 {
-  margin-top: 6%;
-  font-size: 3.5em;
-
   color: var(--colour-light-red);
+  font-size: clamp(1em, 4vw, 3.2em);
 }
 
 .overview_text_section p {
   line-height: 1.4em;
 
-  font-size: 1em;
+  font-size: clamp(0.6rem, 1.8vw, 0.9em);
   font-weight: 400;
 }
 
 /* ----- Product Slideshow Section : Chris ----- */
 .product_slideshow_section {
-  grid-area: 6 / 2 / 7 / 4;
+  grid-area: 6 / 2 / 7 / 6;
 
   display: grid;
-  grid-template: 1fr 35px / 1fr 16fr 1fr;
+  grid-template: 1fr 35px / 35px 16fr 35px;
 }
 
 .slides_container {
@@ -395,7 +343,7 @@ main {
 
 /* ----- Information banner : Mads ----- */
 .info_banner_section {
-  grid-area: 8 / 1 / 9 / 5;
+  grid-area: 8 / 1 / 9 / 10;
 
   background-color: var(--colour-black);
 }
@@ -426,7 +374,11 @@ main {
 
 /* ----- Contact & Signup Section : Mads ----- */
 .product_contact_signup_section {
-  grid-area: 10 / 2 / 11 / 4;
+  grid-area: 10 / 3 / 11 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .product_contact_signup_section h3 {
   margin-bottom: 1rem;
@@ -540,7 +492,7 @@ input[type='checkbox']:checked::before {
 footer {
   display: flex;
   flex-wrap: wrap;
-  grid-area: 13 / 1 / 15 / 5;
+  grid-area: 3 / 1 / 4 / 5;
 
   background-color: var(--colour-black);
 }
