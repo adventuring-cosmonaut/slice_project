@@ -169,7 +169,7 @@ nav {
   display: grid;
   grid-template: minmax(550px, 500px) / 100%;
 
-  margin: 150px 10vw 0;
+  margin: 100px 10vw 0;
 }
 
 .landing_left_box {
