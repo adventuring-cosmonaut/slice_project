@@ -231,6 +231,14 @@ main {
   flex-direction: column;
 }
 
+.intro_text_section h2 {
+  font-size: clamp(1em, 4vw, 3em);
+}
+
+.intro_text_section p {
+  font-size: clamp(1rem, 1.9vw, 1em);
+}
+
 .product_intro_image_1 {
   grid-area: 2 / 1 / 4 / 2;
   background: center / cover no-repeat url('../media/slice-img-1.jpg');
