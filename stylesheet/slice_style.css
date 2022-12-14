@@ -30,7 +30,7 @@ html {
 
 body {
   display: grid;
-  grid-template: repeat(5, 100vh) 500px / 1fr 2fr 2fr 1fr;
+  grid-template: 100vh 150px 80vh 150px 80vh 150px 80vh 150px 250px 150px 80vh 150px 400px / 1fr 2fr 2fr 1fr;
 
   font-size: 1.6rem;
 }
@@ -211,20 +211,19 @@ nav {
 
 main {
   display: grid;
-  grid-area: 2 / 1 / 6 / 5;
-  grid-template:
-    5% 80vh 5% 80vh 5% 80vh 5% 250px 5% 1fr 5% / 1fr repeat(2, 1.5fr)
-    1fr;
+  grid-area: 2 / 1 / 13 / 5;
+  grid-template: 150px 80vh 150px 80vh 150px 80vh 150px 250px 150px 80vh 150px / 1fr repeat(2, 1.5fr) 1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
 .product_intro_section {
   grid-area: 2 / 2 / 3 / 4;
-  height: 80vh;
+  display: grid;
+  grid-template: ;
   width: 100%;
 }
 
-.product_intro_section_inner {
+/* .product_intro_section_inner {
   display: grid;
   grid-template-areas:
     'header header'
@@ -257,17 +256,17 @@ main {
 
 .big-img-template {
   width: 100%;
-  height: 615px;
+  
   object-fit: cover;
 }
 
 .small-img-template-1,
 .small-img-template-2 {
   width: 100%;
-  height: 300px;
+  
 
   object-fit: cover;
-}
+} */
 
 /* ----- Product Overview Section : Chris ----- */
 .product_overview_section {
@@ -344,18 +343,15 @@ main {
 }
 
 .slide_1 {
-  background: center / cover no-repeat
-    url('../media/temp_numbers_slideshow/product_1.jpg');
+  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_1.jpg');
 }
 
 .slide_2 {
-  background: center / cover no-repeat
-    url('../media/temp_numbers_slideshow/product_2.jpg');
+  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_2.jpg');
 }
 
 .slide_3 {
-  background: center / cover no-repeat
-    url('../media/temp_numbers_slideshow/product_3.jpg');
+  background: center / cover no-repeat url('../media/temp_numbers_slideshow/product_3.jpg');
 }
 
 .slideshow_prev,
@@ -544,10 +540,8 @@ input[type='checkbox']:checked::before {
 footer {
   display: flex;
   flex-wrap: wrap;
-  grid-area: 6 / 1 / 7 / 5;
+  grid-area: 13 / 1 / 15 / 5;
 
-  height: 100%;
-  margin-top: 250px;
   background-color: var(--colour-black);
 }
 
