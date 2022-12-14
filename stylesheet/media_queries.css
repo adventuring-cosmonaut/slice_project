@@ -1,5 +1,4 @@
 @media screen and (max-width: 1050px) {
-    
 }
 
 @media screen and (max-width: 950px) {
@@ -17,9 +16,11 @@
 }
 
 @media screen and (max-width: 750px) {
+
+
   .product_intro_section {
     grid-template: 1fr 3fr repeat(2, 1.5fr) / repeat(2, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
   }
 
   .product_intro_image_1 {
