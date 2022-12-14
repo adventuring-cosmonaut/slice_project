@@ -30,7 +30,7 @@ html {
 
 body {
   display: grid;
-  grid-template: 100vh 470vh 55vh / 1fr repeat(2, 1.8fr) 1fr;
+  grid-template: 100vh 440vh 55vh / 1fr repeat(2, 1.8fr) 1fr;
 
   font-size: 1.6rem;
 }
@@ -212,7 +212,7 @@ nav {
 main {
   display: grid;
   grid-area: 2 / 1 / 3 / 5;
-  grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 20vh 80vh 20vh / 1fr 35px repeat(2, 1.5fr) 35px 1fr;
+  grid-template: 20vh 80vh 20vh 80vh 20vh 80vh 20vh 30vh 20vh 50vh 20vh / 1fr 35px repeat(2, 1.5fr) 35px 1fr;
 }
 
 /* ----- Product Intro Section : Mads ----- */
@@ -220,7 +220,7 @@ main {
   grid-area: 2 / 3 / 3 / 5;
   display: grid;
   grid-template: 1fr repeat(2, 1fr) / repeat(2, 1fr);
-  grid-gap: 3%;
+  grid-gap: 20px;
   width: 100%;
 }
 
@@ -306,15 +306,18 @@ main {
 .slideshow_next {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: var(--colour-black);
 
   cursor: pointer;
   user-select: none;
+}
+
+.slideshow_next {
+  justify-self: flex-end;
 }
 
 .slideshow_dot_container {
@@ -326,10 +329,10 @@ main {
 .slideshow_dot {
   display: inline-block;
 
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   margin: 0 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 50%;
   background-color: #bbb;
 
@@ -380,6 +383,11 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+.product_contact_signup_section div {
+  width: 100%;
+}
+
 .product_contact_signup_section h3 {
   margin-bottom: 1rem;
 }
