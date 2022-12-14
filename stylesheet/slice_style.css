@@ -237,7 +237,7 @@ main {
 }
 
 .intro_text_section p {
-  font-size: clamp(1.2rem, 1.5vw, 0.9em);
+  font-size: clamp(1.2rem, 1.5vw, 1em);
   padding-bottom: 0.5em;
 }
 
@@ -279,7 +279,7 @@ main {
 
   text-align: justify;
 
-  font-size: clamp(1.2rem, 1.8vw, 0.9em);
+  font-size: clamp(1.2rem, 1.5vw, 1em);
   font-weight: 400;
 }
 
@@ -392,6 +392,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: max-content;
 }
 
 .product_contact_signup_section div {
@@ -403,7 +404,7 @@ main {
   margin-bottom: 1rem;
 }
 .product_contact_signup_section p {
-  font-size: clamp(1.1rem, 1.5vw, 0.9em);
+  font-size: clamp(1.1rem, 1.5vw, 1em);
   margin-bottom: 8rem;
   text-align: justify;
 }
@@ -453,7 +454,7 @@ button:hover {
 }
 
 .checkbox-control p {
-  font-size: clamp(1rem, 1.5vw, 0.9em);
+  font-size: clamp(1rem, 1.5vw, 1em);
 }
 
 .privacy_underline {
