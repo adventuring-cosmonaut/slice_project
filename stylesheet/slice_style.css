@@ -269,7 +269,6 @@ main {
 
 .knife_overview_image {
   grid-area: 1 / 1 / 4 / 2;
-  min-width: 400px;
   border: none;
   background: center / cover no-repeat url('../media/slice_fall_knife.jpg');
 }

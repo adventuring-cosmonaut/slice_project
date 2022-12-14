@@ -122,21 +122,22 @@
 
 @media screen and (max-width: 500px) {
   body {
-    grid-template: 100vh 390vh 70vh / 1fr repeat(2, 4fr) 1fr;
+    grid-template: 100vh 400vh 75vh / 1fr repeat(2, 4fr) 1fr;
   }
 
   main {
-    grid-template: 20vh 80vh 20vh 80vh 20vh 50vh 20vh 30vh 10vh 50vh 10vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
+    grid-template: 20vh 80vh 20vh 80vh 20vh 50vh 20vh 30vh 15vh 50vh 15vh / 0.5fr 35px repeat(2, 2fr) 35px 0.5fr;
   }
 
   .knife_overview_image {
     min-width: 0;
     max-height: none;
-    background: center / cover no-repeat url('../media/slice_fall_knife.jpg');
+    /* background: center / cover no-repeat url('../media/slice_fall_knife.jpg'); */
   }
 
   .footer_links {
-    height: 43%;
+    height: 25vh;
+    margin: 2.5vh 0;
   }
 
   .footer_logo_container {
@@ -160,6 +161,10 @@
   }
 
   .footer_map {
-    height: 50%;
+    height: 40vh;
+  }
+
+  .copyright_mark {
+    height: 5vh;
   }
 }
