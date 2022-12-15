@@ -2,7 +2,7 @@
 
 # Slice
 
-##Collaboration project for class
+## Collaboration project for class
 
 ---
 
