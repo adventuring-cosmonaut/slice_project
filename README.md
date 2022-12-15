@@ -2,4 +2,4 @@
 
 # Slice
 
-This bitch empty
+Collaboration project for school
